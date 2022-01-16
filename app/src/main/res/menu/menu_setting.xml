@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title=""
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"/>
+
+    <item android:title=""
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_editName" android:title="Edit name"
+                android:icon="@drawable/ic_baseline_edit_24"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/action_setNewPhoto" android:title="Set new photo"
+                android:icon="@drawable/ic_baseline_add_a_photo_24"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/action_logOut" android:title="Log out"
+                android:icon="@drawable/ic_baseline_login_24"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

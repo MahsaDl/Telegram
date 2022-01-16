@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:src="@drawable/nearby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="People Nearby"
+        android:textColor="@color/black"
+        android:textSize="23sp"/>
+    <TextView
+        android:id="@+id/tvQuickly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvNearby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Quickly add people  nearby who are viewing this"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvQuickly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="section and discover local group chats."
+        />
+    <TextView
+        android:id="@+id/tvPlease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Please switch on location access to enable this"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvFeature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvPlease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="feature."
+        android:textSize="16sp"
+        />
+    <Button
+    android:layout_width="170dp"
+    android:layout_height="60dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:text="Allow Access"
+    android:backgroundTint="#65A6DE"
+    app:layout_constraintTop_toBottomOf="@id/tvFeature"
+    android:layout_marginTop="40dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gragh"
+    app:startDestination="@id/mainFragment2">
+
+    <fragment
+        android:id="@+id/nav_calls"
+        android:name="com.example.mytelegram.fragment.CallsFragment"
+        android:label="Calls"
+        tools:layout="@layout/fragment_calls"/>
+    <fragment
+        android:id="@+id/nav_inviteFriends"
+        android:name="com.example.mytelegram.fragment.InviteFriendsFragment"
+        android:label="Invite Friends"
+        tools:layout="@layout/fragment_invitefriends"/>
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="com.example.mytelegram.fragment.ContactsFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contacts"/>
+    <fragment
+        android:id="@+id/nav_newGroup"
+        android:name="com.example.mytelegram.fragment.NewGroupFragment"
+        android:label="New Group"
+        tools:layout="@layout/fragment_newgroup"/>
+    <fragment
+        android:id="@+id/nav_peopleNearby"
+        android:name="com.example.mytelegram.fragment.PeopleNearbyFragment"
+        android:label="People Nearby"
+        tools:layout="@layout/fragment_peoplenearby"/>
+    <fragment
+        android:id="@+id/nav_savedMessages"
+        android:name="com.example.mytelegram.fragment.SavedMessagesFragment"
+        android:label="Saved Messages"
+        tools:layout="@layout/fragment_savedmessages"/>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.mytelegram.fragment.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting"/>
+    <fragment
+        android:id="@+id/nav_telegramFeatures"
+        android:name="com.example.mytelegram.fragment.TelegramFeaturesFragment"
+        android:label="Telegram Features"
+        tools:layout="@layout/fragment_telegramfeatures"/>
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.mytelegram.fragment.MainFragment"
+        android:label="Telegram"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment2_to_nav_newMessage"
+            app:destination="@id/nav_newMessage" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_newMessage"
+        android:name="com.example.mytelegram.fragment.NewMessageFragment"
+        android:label="New Message" />
+</navigation>
